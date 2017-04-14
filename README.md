@@ -6,14 +6,14 @@ Android register and login code using php in database.
 ## Backend
 
 Edit the following lines in the DBOperations.php with your credentials
-```
+```php
     private $host = '<hostname>';
     private $user = '<database user name>';
     private $db = '<database name>';
     private $pass = '<database password>';
 ```
 Also to use the sendPHPMail function, edit the following lines in Functions.php
-```
+```php
 public function sendPHPMail($email,$temp_password){
  
         $subject = 'Password Reset Request';
@@ -26,7 +26,7 @@ public function sendPHPMail($email,$temp_password){
     }
 ```
 
-##Android App
+## Android App
 
 In RequestInterface.java, insert your hostname and index.php file
 ```java
